@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio T. Sayed Mishbahuddin Putra Nisa - Web Developer & Data Analyst lulusan Teknik Informatika Universitas Riau." />
+  <meta name="keywords" content="portofolio, web developer, data analyst, PHP, JavaScript, Bootstrap, Teknik Informatika, Universitas Riau" />
+  <meta name="author" content="T. Sayed Mishbahuddin Putra Nisa" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="T. Sayed Mishbahuddin | Web Developer & Data Analyst" />
+  <meta property="og:description" content="Portofolio profesional T. Sayed Mishbahuddin Putra Nisa - Web Developer & Data Analyst." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/profile.jpg" />
+  <title>T. Sayed Mishbahuddin | Web Developer & Data Analyst</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/profile.jpg" />
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand fw-700" href="#home">
+      <span class="brand-dot">S</span>ayed<span class="brand-accent">.</span>
+    </a>
+    <div class="d-flex align-items-center gap-2 order-lg-last">
+      <!-- Dark Mode Toggle -->
+      <button class="btn btn-dark-toggle" id="darkModeToggle" title="Toggle Dark Mode" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon" id="darkIcon"></i>
+      </button>
+      <!-- Download CV Button -->
+      <a href="assets/cv/CV.pdf" download class="btn btn-cv d-none d-lg-inline-flex">
+        <i class="fa-solid fa-download me-2"></i>Download CV
+      </a>
+      <!-- Hamburger -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <!-- Mobile CV button -->
+      <a href="assets/cv/CV.pdf" download class="btn btn-cv d-lg-none mt-2 mb-1">
+        <i class="fa-solid fa-download me-2"></i>Download CV
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- END NAVBAR -->
+
+
+<!-- ========== HERO SECTION ========== -->
+<section id="home" class="hero-section">
+  <div class="hero-bg-gradient"></div>
+  <div class="container hero-container">
+    <div class="row align-items-center min-vh-100">
+      <!-- Text -->
+      <div class="col-lg-7 hero-text" data-aos="fade-right" data-aos-duration="900">
+        <p class="hero-greeting">Halo, Saya</p>
+        <h1 class="hero-name">T. Sayed Mishbahuddin<br /><span class="hero-name-accent">Putra Nisa</span></h1>
+        <h2 class="hero-role">
+          <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Lulusan Teknik Informatika Universitas Riau dengan ketertarikan kuat pada
+          <strong>Data Analysis</strong>, <strong>Web Development</strong>, dan pengembangan sistem berbasis teknologi modern.
+          Berkomitmen menghadirkan solusi digital yang efisien dan berdampak nyata.
+        </p>
+        <div class="hero-buttons d-flex flex-wrap gap-3 mt-4">
+          <a href="#contact" class="btn btn-primary-custom">
+            <i class="fa-solid fa-envelope me-2"></i>Contact Me
+          </a>
+          <a href="#projects" class="btn btn-outline-custom">
+            <i class="fa-solid fa-folder-open me-2"></i>View Projects
+          </a>
+        </div>
+        <!-- Stats -->
+        <div class="hero-stats d-flex flex-wrap gap-4 mt-5">
+          <div class="stat-item">
+            <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Projects</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Sertifikasi</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Pelatihan</p>
+          </div>
+        </div>
+      </div>
+      <!-- Profile Image -->
+      <div class="col-lg-5 d-flex justify-content-center mt-5 mt-lg-0" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="200">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-ring"></div>
+          <img src="images/profile.jpg" alt="T. Sayed Mishbahuddin Putra Nisa" class="hero-profile-img"
+            onerror="this.src='https://placehold.co/400x400/2563EB/FFFFFF?text=TSM'" loading="lazy" />
+          <div class="hero-image-badge"><i class="fa-solid fa-code"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll indicator -->
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+<!-- END HERO -->
+
+
+<!-- ========== ABOUT SECTION ========== -->
+<section id="about" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Tentang Saya</span>
+      <h2 class="section-title">About <span class="text-accent">Me</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="row align-items-center g-5 mt-2">
+      <div class="col-lg-5 text-center" data-aos="fade-right" data-aos-delay="100">
+        <div class="about-img-wrapper">
+          <img src="images/about.jpg" alt="T. Sayed Mishbahuddin" class="about-profile-img"
+            onerror="this.src='https://placehold.co/450x500/2563EB/FFFFFF?text=About+Me'" loading="lazy" />
+          <div class="about-img-decoration"></div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+        <h3 class="about-subtitle">Web Developer & Data Analyst</h3>
+        <p class="about-text">
+          Saya adalah lulusan Program Studi Teknik Informatika dari <strong>Universitas Riau</strong> dengan ketertarikan 
+          tinggi pada bidang <strong>Data Analysis</strong> dan <strong>Web Development</strong>. Selama masa studi, 
+          saya mengembangkan pemahaman yang kuat dalam pengolahan dan visualisasi data, pemrograman, serta penggunaan 
+          alat analisis data untuk mendukung pengambilan keputusan berbasis data.
+        </p>
+        <p class="about-text">
+          Saya memiliki semangat belajar yang tinggi dan berkomitmen untuk terus mengembangkan keterampilan teknis 
+          maupun analitis guna memberikan kontribusi nyata di dunia profesional. Pengalaman saya mencakup pengembangan 
+          sistem informasi berbasis web, pengelolaan data, serta administrasi sistem di lingkungan pemerintahan.
+        </p>
+        <!-- Info Grid -->
+        <div class="about-info-grid mt-4">
+          <div class="info-item"><i class="fa-solid fa-user text-accent"></i><div><span>Nama</span><strong>T. Sayed Mishbahuddin Putra Nisa</strong></div></div>
+          <div class="info-item"><i class="fa-solid fa-graduation-cap text-accent"></i><div><span>Pendidikan</span><strong>S1 Teknik Informatika, Universitas Riau</strong></div></div>
+          <div class="info-item"><i class="fa-solid fa-location-dot text-accent"></i><div><span>Domisili</span><strong>Jalan Pangkalan Seminai, Riau</strong></div></div>
+          <div class="info-item"><i class="fa-solid fa-envelope text-accent"></i><div><span>Email</span><strong>tsayedmishbahuddin12@gmail.com</strong></div></div>
+          <div class="info-item"><i class="fa-brands fa-instagram text-accent"></i><div><span>Instagram</span><strong>@iis_hh</strong></div></div>
+          <div class="info-item"><i class="fa-solid fa-language text-accent"></i><div><span>Bahasa</span><strong>Indonesia, English (TOEFL Certified)</strong></div></div>
+          <div class="info-item"><i class="fa-solid fa-heart text-accent"></i><div><span>Minat</span><strong>Data Analysis, Web Development, IT Systems</strong></div></div>
+          <div class="info-item"><i class="fa-solid fa-briefcase text-accent"></i><div><span>Bidang</span><strong>Software Developer, Data Analyst, IT Developer</strong></div></div>
+        </div>
+        <div class="mt-4 d-flex flex-wrap gap-3">
+          <a href="#contact" class="btn btn-primary-custom"><i class="fa-solid fa-paper-plane me-2"></i>Hubungi Saya</a>
+          <a href="assets/cv/CV.pdf" download class="btn btn-outline-custom"><i class="fa-solid fa-download me-2"></i>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END ABOUT -->
+
+
+<!-- ========== SKILLS SECTION ========== -->
+<section id="skills" class="section-padding bg-section">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Kemampuan</span>
+      <h2 class="section-title">My <span class="text-accent">Skills</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <!-- Programming -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h4>Programming</h4>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item"><span>PHP</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div><span class="skill-pct">80%</span></div>
+            <div class="skill-item"><span>HTML5</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div><span class="skill-pct">90%</span></div>
+            <div class="skill-item"><span>CSS3</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-item"><span>MySQL</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div><span class="skill-pct">80%</span></div>
+            <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div><span class="skill-pct">70%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks & Libraries -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h4>Frameworks & Libraries</h4>
+          </div>
+          <div class="skill-tags mt-3">
+            <span class="skill-tag"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+            <span class="skill-tag"><i class="fa-solid fa-map me-1"></i>Leaflet.js</span>
+            <span class="skill-tag"><i class="fa-solid fa-chart-bar me-1"></i>Chart.js</span>
+            <span class="skill-tag"><i class="fa-brands fa-js me-1"></i>jQuery</span>
+            <span class="skill-tag"><i class="fa-solid fa-database me-1"></i>CodeIgniter</span>
+          </div>
+          <div class="skill-card-header mt-4">
+            <div class="skill-icon"><i class="fa-solid fa-wrench"></i></div>
+            <h4>Tools</h4>
+          </div>
+          <div class="skill-tags mt-3">
+            <span class="skill-tag"><i class="fa-brands fa-git-alt me-1"></i>Git</span>
+            <span class="skill-tag"><i class="fa-solid fa-server me-1"></i>XAMPP</span>
+            <span class="skill-tag"><i class="fa-solid fa-code me-1"></i>VS Code</span>
+            <span class="skill-tag"><i class="fa-solid fa-database me-1"></i>phpMyAdmin</span>
+            <span class="skill-tag"><i class="fa-brands fa-microsoft me-1"></i>MS Office</span>
+            <span class="skill-tag"><i class="fa-solid fa-network-wired me-1"></i>CCNA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <h4>Soft Skills</h4>
+          </div>
+          <div class="soft-skill-list mt-3">
+            <div class="soft-skill-item"><i class="fa-solid fa-check-circle text-accent me-2"></i>Analitis & Problem Solving</div>
+            <div class="soft-skill-item"><i class="fa-solid fa-check-circle text-accent me-2"></i>Komunikasi Efektif</div>
+            <div class="soft-skill-item"><i class="fa-solid fa-check-circle text-accent me-2"></i>Kerja Tim & Kolaborasi</div>
+            <div class="soft-skill-item"><i class="fa-solid fa-check-circle text-accent me-2"></i>Manajemen Waktu</div>
+            <div class="soft-skill-item"><i class="fa-solid fa-check-circle text-accent me-2"></i>Cepat Belajar & Adaptif</div>
+            <div class="soft-skill-item"><i class="fa-solid fa-check-circle text-accent me-2"></i>Perhatian terhadap Detail</div>
+            <div class="soft-skill-item"><i class="fa-solid fa-check-circle text-accent me-2"></i>Pengambilan Keputusan Berbasis Data</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END SKILLS -->
+
+
+<!-- ========== PROJECTS SECTION ========== -->
+<section id="projects" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Karya Saya</span>
+      <h2 class="section-title">My <span class="text-accent">Projects</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-desc">Beberapa proyek yang telah saya kerjakan selama karir profesional saya.</p>
+    </div>
+
+    <div class="row g-4 mt-2">
+
+      <!-- Project 1: SimpulData -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="images/projects/simpuldata.png" alt="SimpulData" class="project-img" loading="lazy"
+              onerror="this.src='https://placehold.co/600x350/2563EB/FFFFFF?text=SimpulData'" />
+            <div class="project-overlay">
+              <button class="btn btn-detail" onclick="openModal('modal1')"><i class="fa-solid fa-eye me-2"></i>Lihat Detail</button>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-title">SimpulData</h4>
+            <p class="project-desc">Website internal untuk membantu pengelolaan data dan administrasi pada Kantor Imigrasi, mencakup fitur absensi dan berbagai menu administrasi.</p>
+            <div class="project-tech">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <button class="btn btn-project-detail mt-3" onclick="openModal('modal1')"><i class="fa-solid fa-arrow-right me-2"></i>Detail Project</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: SIHANPANGAN851 -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="images/projects/sihanpangan851.png" alt="SIHANPANGAN851" class="project-img" loading="lazy"
+              onerror="this.src='https://placehold.co/600x350/0F172A/FFFFFF?text=SIHANPANGAN851'" />
+            <div class="project-overlay">
+              <button class="btn btn-detail" onclick="openModal('modal2')"><i class="fa-solid fa-eye me-2"></i>Lihat Detail</button>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-title">SIHANPANGAN851</h4>
+            <p class="project-desc">Sistem Informasi Ketahanan Pangan berbasis web untuk mengelola data pertanian, peternakan, hasil produksi, dan data ketahanan pangan secara terstruktur.</p>
+            <div class="project-tech">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <button class="btn btn-project-detail mt-3" onclick="openModal('modal2')"><i class="fa-solid fa-arrow-right me-2"></i>Detail Project</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Sistem Arsip Digital -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="images/projects/arsip.png" alt="Sistem Arsip Digital" class="project-img" loading="lazy"
+              onerror="this.src='https://placehold.co/600x350/2563EB/FFFFFF?text=Arsip+Digital'" />
+            <div class="project-overlay">
+              <button class="btn btn-detail" onclick="openModal('modal3')"><i class="fa-solid fa-eye me-2"></i>Lihat Detail</button>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-title">Sistem Arsip Digital</h4>
+            <p class="project-desc">Sistem digital untuk pengelolaan arsip dokumen sehingga proses penyimpanan, pencarian, dan pengelolaan dokumen menjadi lebih cepat, aman, dan efisien.</p>
+            <div class="project-tech">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <button class="btn btn-project-detail mt-3" onclick="openModal('modal3')"><i class="fa-solid fa-arrow-right me-2"></i>Detail Project</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: SIDIK -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="images/projects/sidik.png" alt="SIDIK" class="project-img" loading="lazy"
+              onerror="this.src='https://placehold.co/600x350/0F172A/FFFFFF?text=SIDIK'" />
+            <div class="project-overlay">
+              <button class="btn btn-detail" onclick="openModal('modal4')"><i class="fa-solid fa-eye me-2"></i>Lihat Detail</button>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-title">SIDIK</h4>
+            <p class="project-desc">Sistem Informasi Digital Intelijen Keimigrasian — visualisasi data intelijen menggunakan peta interaktif Kabupaten Siak untuk monitoring dan analisis data.</p>
+            <div class="project-tech">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Leaflet.js</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <button class="btn btn-project-detail mt-3" onclick="openModal('modal4')"><i class="fa-solid fa-arrow-right me-2"></i>Detail Project</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END PROJECTS -->
+
+
+<!-- ========== PROJECT MODALS ========== -->
+
+<!-- Modal 1: SimpulData -->
+<div class="modal fade project-modal" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label"><i class="fa-solid fa-database me-2 text-accent"></i>SimpulData</h5>
+        <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/projects/simpuldata.png" alt="SimpulData Screenshot" class="modal-project-img"
+          onerror="this.src='https://placehold.co/800x450/2563EB/FFFFFF?text=SimpulData'" loading="lazy" />
+        <div class="modal-project-content">
+          <h6>Deskripsi</h6>
+          <p>Website internal yang dikembangkan untuk membantu pengelolaan data dan administrasi pada Kantor Imigrasi Kelas II TPI Siak. Sistem ini menyediakan fitur pengelolaan data pegawai, absensi digital, serta berbagai menu administrasi yang mempermudah pekerjaan internal kantor.</p>
+          <h6>Fitur Utama</h6>
+          <ul>
+            <li>Manajemen data pegawai dan pengguna</li>
+            <li>Sistem absensi digital terintegrasi</li>
+            <li>Dashboard statistik dan laporan</li>
+            <li>Modul administrasi kantor</li>
+            <li>Export data ke format Excel/PDF</li>
+          </ul>
+          <h6>Teknologi</h6>
+          <div class="project-tech mt-2">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Bootstrap</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+          <div class="mt-4">
+            <a href="mailto:tsayedmishbahuddin12@gmail.com" class="btn btn-primary-custom btn-sm"><i class="fa-solid fa-envelope me-2"></i>Hubungi via Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2: SIHANPANGAN851 -->
+<div class="modal fade project-modal" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Label"><i class="fa-solid fa-seedling me-2 text-accent"></i>SIHANPANGAN851</h5>
+        <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/projects/sihanpangan851.png" alt="SIHANPANGAN851" class="modal-project-img"
+          onerror="this.src='https://placehold.co/800x450/0F172A/FFFFFF?text=SIHANPANGAN851'" loading="lazy" />
+        <div class="modal-project-content">
+          <h6>Deskripsi</h6>
+          <p>Sistem Informasi Ketahanan Pangan berbasis web yang digunakan untuk mengelola data pertanian dan peternakan. Sistem menyediakan informasi tanaman, hasil produksi, serta data ketahanan pangan secara terstruktur dan mudah diakses.</p>
+          <h6>Fitur Utama</h6>
+          <ul>
+            <li>Manajemen data pertanian dan komoditas</li>
+            <li>Data peternakan dan hasil produksi</li>
+            <li>Monitoring ketahanan pangan</li>
+            <li>Visualisasi data produksi dengan grafik</li>
+            <li>Laporan berkala dan eksport data</li>
+          </ul>
+          <h6>Teknologi</h6>
+          <div class="project-tech mt-2">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Bootstrap</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+          <div class="mt-4">
+            <a href="mailto:tsayedmishbahuddin12@gmail.com" class="btn btn-primary-custom btn-sm"><i class="fa-solid fa-envelope me-2"></i>Hubungi via Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3: Sistem Arsip Digital -->
+<div class="modal fade project-modal" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Label"><i class="fa-solid fa-folder-open me-2 text-accent"></i>Sistem Arsip Digital</h5>
+        <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/projects/arsip.png" alt="Sistem Arsip Digital" class="modal-project-img"
+          onerror="this.src='https://placehold.co/800x450/2563EB/FFFFFF?text=Arsip+Digital'" loading="lazy" />
+        <div class="modal-project-content">
+          <h6>Deskripsi</h6>
+          <p>Sistem digital untuk pengelolaan arsip dokumen yang dirancang agar proses penyimpanan, pencarian, dan pengelolaan dokumen menjadi lebih cepat, aman, dan efisien. Menggantikan sistem pengarsipan konvensional dengan solusi digital yang terstruktur.</p>
+          <h6>Fitur Utama</h6>
+          <ul>
+            <li>Upload dan manajemen dokumen digital</li>
+            <li>Sistem pencarian arsip yang cepat</li>
+            <li>Kategorisasi dan pengelompokan dokumen</li>
+            <li>Kontrol akses berbasis peran (role-based access)</li>
+            <li>Riwayat aktivitas dan log sistem</li>
+          </ul>
+          <h6>Teknologi</h6>
+          <div class="project-tech mt-2">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Bootstrap</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+          <div class="mt-4">
+            <a href="mailto:tsayedmishbahuddin12@gmail.com" class="btn btn-primary-custom btn-sm"><i class="fa-solid fa-envelope me-2"></i>Hubungi via Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4: SIDIK -->
+<div class="modal fade project-modal" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal4Label"><i class="fa-solid fa-map-location-dot me-2 text-accent"></i>SIDIK</h5>
+        <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/projects/sidik.png" alt="SIDIK" class="modal-project-img"
+          onerror="this.src='https://placehold.co/800x450/0F172A/FFFFFF?text=SIDIK'" loading="lazy" />
+        <div class="modal-project-content">
+          <h6>Deskripsi</h6>
+          <p>SIDIK (Sistem Informasi Digital Intelijen Keimigrasian) adalah website internal yang memvisualisasikan data intelijen keimigrasian menggunakan peta interaktif Kabupaten Siak. Sistem memungkinkan admin mengelola titik lokasi, aktivitas intelijen, serta informasi pendukung untuk monitoring dan analisis data keimigrasian.</p>
+          <h6>Fitur Utama</h6>
+          <ul>
+            <li>Peta interaktif berbasis Leaflet.js untuk Kabupaten Siak</li>
+            <li>Manajemen titik lokasi dan aktivitas intelijen</li>
+            <li>Dashboard monitoring data keimigrasian</li>
+            <li>Analisis dan visualisasi data spasial</li>
+            <li>Sistem pelaporan dan dokumentasi intelijen</li>
+          </ul>
+          <h6>Teknologi</h6>
+          <div class="project-tech mt-2">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Leaflet.js</span>
+            <span class="tech-badge">Bootstrap</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+          <div class="mt-4">
+            <a href="mailto:tsayedmishbahuddin12@gmail.com" class="btn btn-primary-custom btn-sm"><i class="fa-solid fa-envelope me-2"></i>Hubungi via Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODALS -->
+
+
+<!-- ========== EXPERIENCE SECTION ========== -->
+<section id="experience" class="section-padding bg-section">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Perjalanan Karir</span>
+      <h2 class="section-title">Work <span class="text-accent">Experience</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="timeline mt-5">
+
+      <!-- Experience 1 -->
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
+        <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-date"><i class="fa-regular fa-calendar me-2"></i>November 2025 – Mei 2026</span>
+            <span class="timeline-badge">Full-time</span>
+          </div>
+          <h4 class="timeline-title">Pengelola Kesisteman</h4>
+          <h5 class="timeline-company"><i class="fa-solid fa-building me-2 text-accent"></i>Kantor Imigrasi Kelas II TPI Siak</h5>
+          <p class="timeline-location"><i class="fa-solid fa-location-dot me-2 text-accent"></i>Kab. Siak, Riau, Indonesia</p>
+          <ul class="timeline-desc">
+            <li>Menyusun dan mengelola prosedur kerja serta alur sistem administrasi.</li>
+            <li>Memantau pelaksanaan sistem agar efisien dan sesuai aturan yang berlaku.</li>
+            <li>Mengusulkan perbaikan dan pengembangan sistem kerja yang lebih optimal.</li>
+            <li>Membuat laporan evaluasi efektivitas sistem secara berkala.</li>
+          </ul>
+          <div class="timeline-tech">
+            <span class="tech-badge-sm">Administrasi Sistem</span>
+            <span class="tech-badge-sm">Pengelolaan Data</span>
+            <span class="tech-badge-sm">Evaluasi Sistem</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+        <div class="timeline-dot"><i class="fa-solid fa-id-card"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-date"><i class="fa-regular fa-calendar me-2"></i>Januari 2023 – Maret 2023</span>
+            <span class="timeline-badge timeline-badge-secondary">Magang</span>
+          </div>
+          <h4 class="timeline-title">Kepegawaian dan Umum / Pelayanan Publik</h4>
+          <h5 class="timeline-company"><i class="fa-solid fa-building me-2 text-accent"></i>BPKAD Provinsi Riau</h5>
+          <p class="timeline-location"><i class="fa-solid fa-location-dot me-2 text-accent"></i>Kota Pekanbaru, Riau, Indonesia</p>
+          <ul class="timeline-desc">
+            <li>Membantu pengelolaan administrasi kepegawaian dan urusan umum.</li>
+            <li>Mendukung pelayanan publik dan pengelolaan dokumen instansi.</li>
+          </ul>
+          <div class="timeline-tech">
+            <span class="tech-badge-sm">Administrasi</span>
+            <span class="tech-badge-sm">Pelayanan Publik</span>
+            <span class="tech-badge-sm">Kepegawaian</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END EXPERIENCE -->
+
+
+<!-- ========== EDUCATION SECTION ========== -->
+<section id="education" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Riwayat Belajar</span>
+      <h2 class="section-title">Education & <span class="text-accent">Certifications</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="row g-4 mt-3">
+      <!-- Education -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <h4 class="edu-category-title"><i class="fa-solid fa-graduation-cap me-2 text-accent"></i>Pendidikan</h4>
+        <div class="timeline mt-3">
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-university"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-date">2019 – 2025</span>
+                <span class="timeline-badge">S1</span>
+              </div>
+              <h4 class="timeline-title">Teknik Informatika (S1)</h4>
+              <h5 class="timeline-company"><i class="fa-solid fa-building me-2 text-accent"></i>Universitas Riau</h5>
+              <p class="timeline-location"><i class="fa-solid fa-location-dot me-2 text-accent"></i>Kota Pekanbaru, Riau, Indonesia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+        <h4 class="edu-category-title"><i class="fa-solid fa-certificate me-2 text-accent"></i>Sertifikasi</h4>
+        <div class="cert-list mt-3">
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="cert-body">
+              <h5>Magang Nasional</h5>
+              <p>Kementerian Ketenagakerjaan</p>
+              <span class="cert-date">Mei 2026 – Mei 2030</span>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="cert-body">
+              <h5>Magang Kemenimpas</h5>
+              <p>Kementerian Imigrasi dan Pemasyarakatan</p>
+              <span class="cert-date">Mei 2026 – Mei 2030</span>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-language"></i></div>
+            <div class="cert-body">
+              <h5>TOEFL</h5>
+              <p>UPT Bahasa Universitas Riau</p>
+              <span class="cert-date">Januari 2025 – Januari 2027</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training -->
+      <div class="col-12 mt-2" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="edu-category-title"><i class="fa-solid fa-book me-2 text-accent"></i>Pelatihan</h4>
+        <div class="row g-3 mt-2">
+          <div class="col-md-4">
+            <div class="training-card">
+              <div class="training-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <h5>CCNA Network Engineering</h5>
+              <p>Teknologi Informasi Dan Komunikasi</p>
+              <span class="training-org"><i class="fa-solid fa-building me-1"></i>Digitalent Kominfo</span>
+              <span class="training-date"><i class="fa-regular fa-calendar me-1"></i>Des 2023 – Jan 2024</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="training-card">
+              <div class="training-icon"><i class="fa-solid fa-code"></i></div>
+              <h5>Junior Web Development</h5>
+              <p>Teknologi Informasi Dan Komunikasi</p>
+              <span class="training-org"><i class="fa-solid fa-building me-1"></i>BNSP</span>
+              <span class="training-date"><i class="fa-regular fa-calendar me-1"></i>Nov 2023 – Jan 2024</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="training-card">
+              <div class="training-icon"><i class="fa-brands fa-python"></i></div>
+              <h5>Big Data Using Python</h5>
+              <p>Teknologi Informasi Dan Komunikasi</p>
+              <span class="training-org"><i class="fa-solid fa-building me-1"></i>Digitalent Kominfo</span>
+              <span class="training-date"><i class="fa-regular fa-calendar me-1"></i>Nov 2022 – Jan 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END EDUCATION -->
+
+
+<!-- ========== GALLERY SECTION ========== -->
+<section id="gallery" class="section-padding bg-section">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Screenshot</span>
+      <h2 class="section-title">Project <span class="text-accent">Gallery</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-desc">Tambahkan gambar ke folder <code>images/gallery/</code> dan perbarui daftar di bawah ini.</p>
+    </div>
+    <!-- 
+      PANDUAN GALLERY:
+      Untuk menambahkan gambar, duplikat elemen div.gallery-item di bawah dan ganti src gambar.
+      Contoh: <img src="images/gallery/namafile.png" alt="Deskripsi" ...>
+    -->
+    <div class="gallery-grid mt-4" id="galleryGrid">
+      <!-- Gallery items — tambah item baru cukup duplikat blok di bawah -->
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/gallery/Screenshot_1.png" alt="Screenshot 1" loading="lazy"
+          onerror="this.src='https://placehold.co/400x300/2563EB/FFFFFF?text=Screenshot+1'" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Peta kecamatan sidik</span></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+        <img src="images/gallery/Screenshot_2.png" alt="Screenshot 2" loading="lazy"
+          onerror="this.src='https://placehold.co/400x300/0F172A/FFFFFF?text=Screenshot+2'" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Admin panel sihanpangan</span></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/gallery/Screenshot_3.png" alt="Screenshot 3" loading="lazy"
+          onerror="this.src='https://placehold.co/400x300/2563EB/FFFFFF?text=Screenshot+3'" />  
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Pleton unggas Sihanpangan</span></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+        <img src="images/gallery/Screenshot_4.png" alt="Screenshot 4" loading="lazy"
+          onerror="this.src='https://placehold.co/400x300/0F172A/FFFFFF?text=Screenshot+4'" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Konfigurasi role Sidik</span></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+        <img src="images/gallery/Screenshot_5.png" alt="Screenshot 5" loading="lazy"
+          onerror="this.src='https://placehold.co/400x300/2563EB/FFFFFF?text=Screenshot+5'" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Halaman lalintakim Simpuldata</span></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+        <img src="images/gallery/Screenshot_6.png" alt="Screenshot 6" loading="lazy"
+          onerror="this.src='https://placehold.co/400x300/0F172A/FFFFFF?text=Screenshot+6'" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Halaman kepegawaian Simpuldata</span></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+        <img src="images/gallery/Screenshot_7.png" alt="Screenshot 7" loading="lazy"
+          onerror="this.src='https://placehold.co/400x300/0F172A/FFFFFF?text=Screenshot+7'" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Peta Dashboard Sidik</span></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+        <img src="images/gallery/Screenshot_8.png" alt="Screenshot 8" loading="lazy"
+          onerror="this.src='https://placehold.co/400x300/0F172A/FFFFFF?text=Screenshot+8'" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Konfigurasi akses Sidik</span></div>
+      </div>
+    </div>
+    <!-- Lightbox modal for gallery -->
+    <div id="galleryLightbox" class="gallery-lightbox" onclick="closeLightbox()">
+      <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="Gallery Lightbox" />
+        <span class="lightbox-caption" id="lightboxCaption"></span>
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END GALLERY -->
+
+
+<!-- ========== CONTACT SECTION ========== -->
+<section id="contact" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Kontak</span>
+      <h2 class="section-title">Get In <span class="text-accent">Touch</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-desc">Tertarik untuk berkolaborasi atau memiliki peluang kerja? Jangan ragu menghubungi saya.</p>
+    </div>
+
+    <div class="row g-5 mt-2">
+      <!-- Contact Info -->
+      <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+        <h4 class="contact-info-title">Informasi Kontak</h4>
+        <p class="contact-info-desc">Saya terbuka untuk peluang kerja, kolaborasi proyek, dan diskusi teknologi. Hubungi saya melalui salah satu kanal berikut.</p>
+        <div class="contact-items">
+          <a href="mailto:tsayedmishbahuddin12@gmail.com" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div><span>Email</span><strong>tsayedmishbahuddin12@gmail.com</strong></div>
+          </a>
+          <a href="https://instagram.com/iis_hh" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div><span>Instagram</span><strong>@iis_hh</strong></div>
+          </a>
+          <a href="https://www.linkedin.com/in/t-sayed-mishbahuddin-a6a3ab420/" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div><span>LinkedIn</span><strong>linkedin.com/in/tsayedmishbahuddin</strong></div>
+          </a>
+        </div>
+        <div class="social-links mt-4">
+          <a href="mailto:tsayedmishbahuddin12@gmail.com" class="social-btn" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://instagram.com/iis_hh" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/t-sayed-mishbahuddin-a6a3ab420/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="contactName">Nama Lengkap</label>
+                <input type="text" id="contactName" name="name" class="form-control custom-input" placeholder="Nama Anda" required />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" name="email" class="form-control custom-input" placeholder="email@anda.com" required />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="contactSubject">Subjek</label>
+                <input type="text" id="contactSubject" name="subject" class="form-control custom-input" placeholder="Perihal pesan" required />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="contactMessage">Pesan</label>
+                <textarea id="contactMessage" name="message" class="form-control custom-input" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary-custom w-100">
+                <i class="fa-solid fa-paper-plane me-2"></i>Kirim Pesan
+              </button>
+            </div>
+          </div>
+          <div class="form-alert mt-3 d-none" id="formAlert"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END CONTACT -->
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="footer-brand">T. Sayed Mishbahuddin Putra Nisa</span>
+          <p class="footer-tagline">Web Developer · Data Analyst · IT Enthusiast</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-social">
+            <a href="mailto:tsayedmishbahuddin12@gmail.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://instagram.com/iis_hh" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/t-sayed-mishbahuddin-a6a3ab420/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container text-center">
+      <p>&copy; <span id="footerYear"></span> <strong>T. Sayed Mishbahuddin Putra Nisa</strong>. All rights reserved.</p>
+      <p class="footer-note">Dibuat dengan <i class="fa-solid fa-heart text-accent"></i> menggunakan HTML, CSS & JavaScript</p>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+<!-- Back To Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top" title="Kembali ke atas">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ========== SCRIPTS ========== -->
+<!-- Bootstrap 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
